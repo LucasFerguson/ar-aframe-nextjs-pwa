@@ -44,3 +44,9 @@ yarn-error.log*
 
 # idea files
 .idea
+
+
+# Progressive Web App (PWA) files
+# Serwist
+public/sw*
+public/swe-worker*
