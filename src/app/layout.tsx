@@ -31,6 +31,8 @@
 
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
+import { Geist } from "next/font/google";
+import "~/styles/globals.css";
 
 const APP_NAME = "PWA App";
 const APP_DEFAULT_TITLE = "My Awesome PWA App";
@@ -72,13 +74,18 @@ export const metadata: Metadata = {
   },
 };
 
+const geist = Geist({
+  subsets: ["latin"],
+  variable: "--font-geist-sans",
+});
+
 export const viewport: Viewport = {
   themeColor: "#FFFFFF",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" dir="ltr">
+    <html lang="en" dir="ltr" className={`${geist.variable}`}>
       <head />
       <body>{children}</body>
     </html>

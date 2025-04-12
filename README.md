@@ -11,6 +11,14 @@ Setting up Progressive Web App (PWA) with Sworkbox:
 
 recreated the project without tRPC 
 
+
+run the following to setyp the project:
+```bash
+npx prisma db push
+```
+
+
+
 # Setup
 
 C:\Users\Lucas\.Lucas\2025Code\aframe-ar>npm create t3-app@latest
